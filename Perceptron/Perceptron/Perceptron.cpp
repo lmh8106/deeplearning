@@ -181,6 +181,10 @@ void example_gate_AND_perceptron() {
 	cout << "fx=" << first_neuron->x << " fw=" << first_neuron->w << " sx=" << second_neuron->x << " sw=" << second_neuron->w << " output_y = " << gate_AND_with_Bias(first_neuron, second_neuron, 0.7f) << endl;
 
 	cout << endl;
+
+	delete first_neuron; first_neuron = NULL;
+	delete second_neuron; second_neuron = NULL;
+
 }
 
 void example_gate_NAND_perceptron() {
@@ -213,6 +217,10 @@ void example_gate_NAND_perceptron() {
 	cout << "fx=" << first_neuron->x << " fw=" << first_neuron->w << " sx=" << second_neuron->x << " sw=" << second_neuron->w << " output_y = " << gate_NAND(first_neuron, second_neuron, -0.7f) << endl;
 
 	cout << endl;
+
+	delete first_neuron; first_neuron = NULL;
+	delete second_neuron; second_neuron = NULL;
+
 }
 
 void example_gate_OR_perceptron() {
@@ -245,6 +253,10 @@ void example_gate_OR_perceptron() {
 	cout << "fx=" << first_neuron->x << " fw=" << first_neuron->w << " sx=" << second_neuron->x << " sw=" << second_neuron->w << " output_y = " << gate_OR(first_neuron, second_neuron, 0.2f) << endl;
 
 	cout << endl;
+
+	delete first_neuron; first_neuron = NULL;
+	delete second_neuron; second_neuron = NULL;
+
 }
 
 void example_gate_XOR_perceptron() {
@@ -360,6 +372,10 @@ void example_gate_XOR_perceptron() {
 	cout << "[ first_neuron_x(x1) = 1, second_neuron_x(x2) = 1 ]" << " [ output_of_gate_NAND(s1) = " << output_of_gate_NAND << ", output_of_gate_OR(s2) = " << output_of_gate_OR << " ], output_of_gate_AND(y) = " << y << endl;
 
 	cout << endl;
+
+	delete first_neuron; first_neuron = NULL;
+	delete second_neuron; second_neuron = NULL;
+
 
 }
 
